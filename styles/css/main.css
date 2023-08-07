@@ -620,7 +620,7 @@ footer .footer-support .footer__list-item {
   line-height: normal;
 }
 
-@media screen and (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   html {
     overflow-x: hidden;
   }
