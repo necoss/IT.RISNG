@@ -26,6 +26,7 @@
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
 
   <script src="./js/gsap-animation.js" defer></script>
+  <script src="./js/menu-button.js" defer></script>
 
 </head>
 
@@ -55,9 +56,16 @@
               <li class="navigation__list-item"><a href="#">Блог</a></li>
               <li class="navigation__list-item navigation__primary-btn"><a href="#">Войти</a></li>
               <li class="navigation__list-item navigation__mobile-menu">
-                <button class="navigation__mobile-menu__button">
+                <button onclick="showDropdown()" class="navigation__mobile-menu__button">
                   <iconify-icon icon="iconamoon:menu-burger-horizontal"></iconify-icon>
                 </button>
+
+                <div id="dropdown">
+                  <a href="#">Главная</a>
+                  <a href="#">Тренажёры</a>
+                  <a href="#">О нас</a>
+                  <a href="#">Блог</a>
+                </div>
               </li>
             </ul>
           </nav>

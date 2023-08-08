@@ -201,7 +201,7 @@ header {
         }
       }
 
-      .navigation__mobile-menu{
+      .navigation__mobile-menu {
         display: none;
       }
     }
@@ -745,6 +745,7 @@ footer {
         .navigation__list-item {
           margin: 0 calc(var(--index) * .6);
           display: none;
+          opacity: 0;
 
           a {
             color: rgba(15, 13, 13, 0.60);
@@ -773,6 +774,36 @@ footer {
 
         .navigation__mobile-menu {
           display: block;
+          position: relative;
+
+          #dropdown {
+            display: none;
+            position: absolute;
+            width: calc(var(--index) * 12);
+            background-color: white;
+            border-radius: 10px;
+            left: calc(var(--index) * -9.5);
+            margin-top: 8px;
+            padding-top: 14px;
+            padding-bottom: 14px;
+            border-radius: 16px;
+            background-color: #fff;
+            box-shadow: 0 30px 50px 0 rgba(0, 0, 0, 0.15);
+          }
+
+          .dropdown-active {
+            display: flex !important;
+            flex-direction: column;
+            z-index: 800;
+
+            a {
+              font-size: 16px;
+              line-height: 107%;
+              font-weight: 500;
+              color: #0f0d0d99;
+              padding: 12px 20px;
+            }
+          }
 
           .navigation__mobile-menu__button {
             padding: 16px;
@@ -784,13 +815,13 @@ footer {
             transition: background-color 300ms cubic-bezier(.25, .46, .45, .94), color 300ms cubic-bezier(.25, .46, .45, .94);
             position: relative;
 
-            iconify-icon{
+            iconify-icon {
               color: black;
               position: absolute;
               top: 50%;
               left: 50%;
               transform: translate(-50%, -50%);
-              
+
             }
           }
         }
@@ -805,6 +836,7 @@ footer {
       margin-top: calc(var(--index) * 10);
       position: relative;
       opacity: 0;
+      z-index: -1 !important;
 
       .hero__title {
         margin-right: 0;
