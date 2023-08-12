@@ -1,91 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-    <title>IT.RISING</title>
-  
-    <link rel="shortcut icon" href="../../src/images/logo/logo.svg" type="image/x-icon">
-  
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet">
-  
-    <link rel="stylesheet" href="../../styles/css/main.css">
-  
-    <script src="../../libs/gsap/gsap.min.js" defer></script>
-    <script src="../../libs/gsap/ScrollTrigger.min.js" defer></script>
-    <script src="../../libs/gsap/ScrollSmoother.min.js" defer></script>
-    <script src="../../libs/gsap/ScrollToPlugin.min.js" defer></script>
-    <script src="../../libs/gsap/TextPlugin.min.js" defer></script>
-  
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js" defer></script>
-  
-    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
-  
-    <script src="../../js/gsap-animation.js" defer></script>
-    <script src="../../js/login.js" defer></script>
-  
-  </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>IT.RISING</title>
+
+  <link rel="shortcut icon" href="../../src/images/logo/logo.svg" type="image/x-icon">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="../../styles/css/main.css">
+
+  <script src="../../libs/gsap/gsap.min.js" defer></script>
+  <script src="../../libs/gsap/ScrollTrigger.min.js" defer></script>
+  <script src="../../libs/gsap/ScrollSmoother.min.js" defer></script>
+  <script src="../../libs/gsap/ScrollToPlugin.min.js" defer></script>
+  <script src="../../libs/gsap/TextPlugin.min.js" defer></script>
+
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js" defer></script>
+
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
+
+  <script src="../../js/login.js" defer></script>
+
+</head>
 
 <body class="login-page-body">
 
-  <a href="javascript:history.back()" class="login-page__back-button"><iconify-icon icon="ep:arrow-up" rotate="270deg"></iconify-icon>Назад</a>
-  
-  <div class="container" id="container">
-    <div class="form-container sign-up-container">
+  <main class="login-page-main">
+    <a href="javascript:history.back()" class="login-page__back-button"><iconify-icon icon="ep:arrow-up"
+        rotate="270deg"></iconify-icon>Назад</a>
 
-      <form action="#">
-        <h1>Создать аккаунт</h1>
-        <div class="social-container">
-          <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-          <!-- <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a> -->
-        </div>
-        <span>или используйте ваш E-mail для регистрации</span>
-        <input type="text" placeholder="Name" />
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Password" />
-        <button>Зарегистрироваться</button>
-      </form>
+    <div class="container" id="container">
+      <div class="form-container sign-up-container">
 
-    </div>
-    <div class="form-container sign-in-container">
+        <form action="#">
+          <h1>Создать аккаунт</h1>
+          <div class="social-container">
+            <a href="#" class="social"><iconify-icon icon="flat-color-icons:google"></iconify-icon></a>
+            <!-- <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a> -->
+          </div>
+          <span>или используйте ваш E-mail для регистрации</span>
+          <input type="text" placeholder="Логин" />
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Пароль" />
+          <button>Зарегистрироваться</button>
+        </form>
 
-      <form action="#">
-        <h1>Войти</h1>
-        <div class="social-container">
-          <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-          <!-- <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a> -->
-        </div>
-        <span>или используйте свой аккаунт</span>
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Password" />
-        <a href="#">Забыли пароль?</a>
-        <button>Войти</button>
-      </form>
-
-    </div>
-    <div class="overlay-container">
-
-      <div class="overlay">
-        <div class="overlay-panel overlay-left">
-          <h1>Вы вернулись!</h1>
-          <p>Быстрее войдите в свой аккаунт и продолжайте обучение!</p>
-          <button class="ghost" id="signIn">Войти</button>
-        </div>
-
-        <div class="overlay-panel overlay-right">
-          <h1>Привет, друг!</h1>
-          <p>Зарегистрируйся и начни увлекательное путешествие с IT.RISING</p>
-          <button class="ghost" id="signUp">Зарегистрироваться</button>
-        </div>
       </div>
+      <div class="form-container sign-in-container">
 
+        <form action="#">
+          <h1>Войти</h1>
+          <div class="social-container">
+            <a href="#" class="social"><iconify-icon icon="flat-color-icons:google"></iconify-icon></a>
+            <!-- <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a> -->
+          </div>
+          <span>или используйте свой аккаунт</span>
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Пароль" />
+          <a href="#">Забыли пароль?</a>
+          <button>Войти</button>
+        </form>
+
+      </div>
+      <div class="overlay-container">
+
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Вы вернулись!</h1>
+            <p>Быстрее войдите в свой аккаунт и продолжайте обучение!</p>
+            <button class="ghost" id="signIn">Войти</button>
+          </div>
+
+          <div class="overlay-panel overlay-right">
+            <h1>Привет, друг!</h1>
+            <p>Зарегистрируйся и начни увлекательное путешествие с IT.RISING</p>
+            <button class="ghost" id="signUp">Зарегистрироваться</button>
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
+  </main>
+
+
 
 </body>
+
 </html>
