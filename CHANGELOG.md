@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ## [Unreleased]
 
+## [Beta-ver.0.8] - 2023-08-12
+### Fixed:
+- Login page screen sizes for iPhone devices.
+- Login page styles for desktop devices.
+
 ## [Beta-ver.0.7] - 2023-08-12
 ### Added:
 - Fully adaptive login page.
