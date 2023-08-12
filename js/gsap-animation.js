@@ -43,28 +43,6 @@ requestAnimationFrame(raf)
 
 // // * Timelines
 
-gsap.set(".reviews-wrapper", {backgroundImage: `backgroundColor: '#FBFAFA${innerWidth * 3}x${innerHeight})`})
-
-gsap.to(".reviews-wrapper", {
-  xPercent: -100, 
-  x: () => innerWidth,
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".reviews-wrapper",
-    start: "top top",
-    end: () => innerWidth * 3,
-    scrub: true,
-    pin: true,
-    invalidateOnRefresh: true,
-    anticipatePin: 1,
-    onEnter: () => {
-      gsap.to('.reviews-wrapper', { duration: 1.0, backgroundColor: '#FBFAFA'})
-    },
-    onLeaveBack: () => {
-      gsap.to('.reviews-wrapper', { duration: 1.0, backgroundColor: '#FBFAFA'})
-    },
-  }
-});
 
 gsap.fromTo('.navigation__logo', { opacity: 0, y: -30 }, {
   opacity: 1,

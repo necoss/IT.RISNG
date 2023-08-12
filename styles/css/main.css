@@ -479,12 +479,11 @@ main .get-knowledge .get-knowledge-content .knowledge-list .knowledge-list__item
   font-weight: 400;
   line-height: normal;
 }
-
-.reviews {
+main .reviews {
   margin-top: calc(var(--index) * 15);
+  min-height: 100vh;
 }
-.reviews .reviews__title {
-  padding: 0 calc(var(--index) * 8.6);
+main .reviews .reviews__title {
   color: var(--title-color);
   font-size: 44px;
   font-style: normal;
@@ -492,33 +491,12 @@ main .get-knowledge .get-knowledge-content .knowledge-list .knowledge-list__item
   line-height: normal;
   max-width: 1300px;
 }
-.reviews .reviews-wrapper {
+main .reviews .reviews-card__block {
   margin-top: calc(var(--index) * 3);
-  height: 100vh;
-  width: 200vw;
-  background-size: cover;
-  background-position: center;
-  z-index: -1;
-  -webkit-backdrop-filter: blur(50px);
-          backdrop-filter: blur(50px);
-}
-.reviews .reviews-wrapper .reviews-content {
   position: relative;
 }
-.reviews .reviews-wrapper .reviews-content .reviews-card__block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+main .reviews .reviews-card__block .reviews-card {
   position: absolute;
-  top: calc(var(--index) * 10);
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-.reviews .reviews-wrapper .reviews-content .reviews-card__block .reviews-card {
   width: 500px;
   height: 200px;
   border-radius: 16px;
@@ -527,17 +505,30 @@ main .get-knowledge .get-knowledge-content .knowledge-list .knowledge-list__item
           box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
   padding: 35px 35px;
 }
-.reviews .reviews-wrapper .reviews-content .reviews-card__block .reviews-card:not(:last-child) {
-  margin-right: 250px;
+main .reviews .reviews-card__block .reviews-card:nth-child(1) {
+  left: calc(var(--index) * 2);
+  top: 0;
 }
-.reviews .reviews-wrapper .reviews-content .reviews-card__block .reviews-card .reviews-card__text {
+main .reviews .reviews-card__block .reviews-card:nth-child(2) {
+  left: calc(var(--index) * 2);
+  top: calc(var(--index) * 10);
+}
+main .reviews .reviews-card__block .reviews-card:nth-child(3) {
+  right: calc(var(--index) * 2);
+  top: calc(var(--index) * -1);
+}
+main .reviews .reviews-card__block .reviews-card:nth-child(4) {
+  right: calc(var(--index) * 2);
+  top: calc(var(--index) * 9);
+}
+main .reviews .reviews-card__block .reviews-card .reviews-card__text {
   color: var(--paragraph-color);
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-.reviews .reviews-wrapper .reviews-content .reviews-card__block .reviews-card .reviews-card__user {
+main .reviews .reviews-card__block .reviews-card .reviews-card__user {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -546,32 +537,22 @@ main .get-knowledge .get-knowledge-content .knowledge-list .knowledge-list__item
           align-items: center;
   margin-top: 70px;
 }
-.reviews .reviews-wrapper .reviews-content .reviews-card__block .reviews-card .reviews-card__user .reviews-card__user-info {
+main .reviews .reviews-card__block .reviews-card .reviews-card__user .reviews-card__user-info {
   padding-left: 15px;
 }
-.reviews .reviews-wrapper .reviews-content .reviews-card__block .reviews-card .reviews-card__user .reviews-card__user-info .reviews-card__user-name {
+main .reviews .reviews-card__block .reviews-card .reviews-card__user .reviews-card__user-info .reviews-card__user-name {
   color: var(--title-color);
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
-.reviews .reviews-wrapper .reviews-content .reviews-card__block .reviews-card .reviews-card__user .reviews-card__user-info .reviews-card__user-post {
+main .reviews .reviews-card__block .reviews-card .reviews-card__user .reviews-card__user-info .reviews-card__user-post {
   color: rgba(15, 13, 13, 0.5);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-.reviews .reviews-wrapper .reviews-content .second-reviews-block {
-  position: absolute;
-  top: calc(var(--index) * 23);
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-.reviews .reviews-wrapper .reviews-content .second-reviews-block .reviews-card:not(:last-child) {
-  margin-right: 210px;
 }
 
 footer {
@@ -1122,22 +1103,47 @@ footer .footer-support .footer__list-item {
     font-weight: 400;
     line-height: normal;
   }
-  .reviews {
-    margin-top: calc(var(--index) * 15);
-    display: none;
+  main .reviews .reviews__title {
+    color: var(--title-color);
+    font-size: calc(var(--index) * 2.5);
+  }
+  main .reviews .reviews-card__block .reviews-card {
+    width: 353px;
+    height: 305px;
+    top: 50%;
+    padding: 43px 35px;
+  }
+  main .reviews .reviews-card__block .reviews-card:nth-child(1) {
+    left: 0;
+    top: 0;
+  }
+  main .reviews .reviews-card__block .reviews-card:nth-child(2) {
+    left: 0;
+    top: calc(var(--index) * 25);
+  }
+  main .reviews .reviews-card__block .reviews-card:nth-child(3) {
+    left: 0;
+    top: calc(var(--index) * 50);
+  }
+  main .reviews .reviews-card__block .reviews-card:nth-child(4) {
+    left: 0;
+    top: calc(var(--index) * 75);
+  }
+  main .reviews .reviews-card__block .reviews-card .reviews-card__user {
+    margin-top: 140px;
   }
   footer {
-    margin-top: calc(var(--index) * 20);
+    margin-top: calc(var(--index) * 55);
     margin-bottom: calc(var(--index) * 3);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

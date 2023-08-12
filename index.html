@@ -38,306 +38,235 @@
     <div class="hero-circle-c"></div>
   </div>
 
-  <div class="gsap-wrapper">
-    <div class="gsap-content">
-      <div class="container">
+  <div class="container">
 
-        <header>
-          <nav class="navigation">
-            <a href="#" class="navigation__logo">
-              <img class="logo-image" src="./src/images/logo/logo.svg" alt="Logo">
-              <p class="logo-text">itr.</p>
-            </a>
+    <header>
+      <nav class="navigation">
+        <a href="#" class="navigation__logo">
+          <img class="logo-image" src="./src/images/logo/logo.svg" alt="Logo">
+          <p class="logo-text">itr.</p>
+        </a>
 
-            <ul class="navigation__list">
-              <li class="navigation__list-item"><a href="#">Главная</a></li>
-              <li class="navigation__list-item"><a href="#">Тренажёры</a></li>
-              <li class="navigation__list-item"><a href="#">О нас</a></li>
-              <li class="navigation__list-item"><a href="#">Блог</a></li>
-              <li class="navigation__list-item navigation__primary-btn"><a href="#">Войти</a></li>
-              <li class="navigation__list-item navigation__mobile-menu">
-                <button onclick="showDropdown()" class="navigation__mobile-menu__button">
-                  <iconify-icon icon="iconamoon:menu-burger-horizontal"></iconify-icon>
-                </button>
+        <ul class="navigation__list">
+          <li class="navigation__list-item"><a href="#">Главная</a></li>
+          <li class="navigation__list-item"><a href="#">Тренажёры</a></li>
+          <li class="navigation__list-item"><a href="#">О нас</a></li>
+          <!-- <li class="navigation__list-item"><a href="#">Блог</a></li> -->
+          <li class="navigation__list-item navigation__primary-btn"><a href="#">Войти</a></li>
+          <li class="navigation__list-item navigation__mobile-menu">
+            <button onclick="showDropdown()" class="navigation__mobile-menu__button">
+              <iconify-icon icon="iconamoon:menu-burger-horizontal"></iconify-icon>
+            </button>
 
-                <div id="dropdown">
-                  <a href="#">Главная</a>
-                  <a href="#">Тренажёры</a>
-                  <a href="#">О нас</a>
-                  <a href="#">Блог</a>
-                </div>
-              </li>
-            </ul>
-          </nav>
-        </header>
+            <div id="dropdown">
+              <a href="#">Главная</a>
+              <a href="#">Тренажёры</a>
+              <a href="#">О нас</a>
+              <a href="#">Блог</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-        <main>
+    <main>
 
-          <div class="hero-section">
+      <div class="hero-section">
 
-            <h1 class="hero__title">Прокачай себя и свои знания в мире IT</h1>
-            <p class="hero__paragraph">С сервисом IT-RISING вы забудете о вечной проблеме с поисками сайтов для
-              отработки ваших навыков программирования или изучения новых</p>
-            <div class="hero__buttons">
-              <a href="" class="hero__start-button">Начать</a>
-              <a href="" class="hero__about-button">О нас <iconify-icon class="about-button-icon" width="20"
-                  icon="solar:arrow-up-linear" rotate="90deg"></iconify-icon></a>
+        <h1 class="hero__title">Прокачай себя и свои знания в мире IT</h1>
+        <p class="hero__paragraph">С сервисом IT-RISING вы забудете о вечной проблеме с поисками сайтов для
+          отработки ваших навыков программирования или изучения новых</p>
+        <div class="hero__buttons">
+          <a href="" class="hero__start-button">Начать</a>
+          <a href="" class="hero__about-button">О нас <iconify-icon class="about-button-icon" width="20"
+              icon="solar:arrow-up-linear" rotate="90deg"></iconify-icon></a>
+        </div>
+
+      </div>
+
+      <div class="advantages">
+
+        <div class="advantages-item">
+          <img class="advantages__icon" src="./src/images/advantages/ico-speed.svg" alt="Speed Icon">
+          <p class="advantages__title">Скорость</p>
+          <p class="advantages__paragraph">С нами вы забудете о долгом поиске тренажёров. Выбирайте язык
+            программировани и вперед к знаниям!</p>
+          <a href="#" class="advantages__button">Подробнее</a>
+        </div>
+
+        <div class="advantages-item">
+          <img class="advantages__icon" src="./src/images/advantages/ico-progress.svg" alt="Progress Icon">
+          <p class="advantages__title">Результативность</p>
+          <p class="advantages__paragraph">Мы предоставляем только тщательно отобранные тренажёры. С нами
+            эффективность обучения будет 100%</p>
+          <a href="#" class="advantages__button">Подробнее</a>
+        </div>
+
+        <div class="advantages-item">
+          <img class="advantages__icon" src="./src/images/advantages/ico-support.svg" alt="Support Icon">
+          <p class="advantages__title">Поддержка</p>
+          <p class="advantages__paragraph">Мы постоянно обновляем трнажеры и следим за их актуальностью, а наша
+            поддержка готова вам помочь 24/7</p>
+          <a href="#" class="advantages__button">Подробнее</a>
+        </div>
+
+      </div>
+
+      <div class="black-section">
+
+        <h3 class="black-section__title">Изучайте новое как на ПК, так и на вашем телефоне</h3>
+        <p class="black-section__paragraph">Вы можете прокачать свои знания программирования не только сидя за
+          компьютером, но и в любом другом месте с помощью вашего телефона</p>
+        <img class="black-section__image" src="./src/images/black-section/black-section-image.svg"
+          alt="Black Section Image">
+
+      </div>
+
+      <div class="info-blocks">
+
+        <div class="info-blocks__item info-blocks-1">
+          <h5 class="info__title">Постоянное обновление тренажёров</h5>
+          <p class="info__paragraph">Мы добавляем новые тренажёры сразу же, как они выходят, а так же следим за
+            актуальностью старых</p>
+          <img src="./src/images/info-blocks/left-block.svg" alt="" class="info__image">
+        </div>
+
+        <div class="info-blocks__item info-blocks-2">
+          <h5 class="info__title">Поддержка более 11 языков</h5>
+          <p class="info__paragraph">У нас вы можете улучшить знания популярных языков программирования, таких как:
+            JavaScript, Python, PHP, Java, C#, C++ и других</p>
+          <img src="./src/images/info-blocks/right-block.svg" alt="" class="info__image">
+        </div>
+
+      </div>
+
+      <div class="get-knowledge">
+        <div class="get-knowledge-circles">
+          <div class="knowledge-circle-a"></div>
+          <div class="knowledge-circle-b"></div>
+          <div class="knowledge-circle-c"></div>
+        </div>
+
+        <div class="get-knowledge-content">
+          <h6 class="knowledge__title">Эффективная система получения информации</h6>
+          <p class="knowledge__paragraph">Всё что вам нужно, для удобного и быстрого получения новых знаний или
+            отработки уже имеющихся навыков, это лишь:</p>
+
+          <div class="knowledge-list">
+            <div class="knowledge-list__item">
+              <img class="knowledge-list__image" src="./src/images/get-knowledge/Tick-icon.svg"
+                alt="Knowledge list icon">
+              <p class="knowledge-list__text">Перейти на страницу с тренажёрами</p>
             </div>
 
+            <div class="knowledge-list__item">
+              <img class="knowledge-list__image" src="./src/images/get-knowledge/Tick-icon.svg"
+                alt="Knowledge list icon">
+              <p class="knowledge-list__text">Выбрать нужный язык программирования</p>
+            </div>
+
+            <div class="knowledge-list__item">
+              <img class="knowledge-list__image" src="./src/images/get-knowledge/Tick-icon.svg"
+                alt="Knowledge list icon">
+              <p class="knowledge-list__text">Получить доступ к десяткам тренажёрам и прокачать себя в сфере IT</p>
+            </div>
           </div>
+        </div>
 
-          <div class="advantages">
-
-            <div class="advantages-item">
-              <img class="advantages__icon" src="./src/images/advantages/ico-speed.svg" alt="Speed Icon">
-              <p class="advantages__title">Скорость</p>
-              <p class="advantages__paragraph">С нами вы забудете о долгом поиске тренажёров. Выбирайте язык
-                программировани и вперед к знаниям!</p>
-              <a href="#" class="advantages__button">Подробнее</a>
-            </div>
-
-            <div class="advantages-item">
-              <img class="advantages__icon" src="./src/images/advantages/ico-progress.svg" alt="Progress Icon">
-              <p class="advantages__title">Результативность</p>
-              <p class="advantages__paragraph">Мы предоставляем только тщательно отобранные тренажёры. С нами
-                эффективность обучения будет 100%</p>
-              <a href="#" class="advantages__button">Подробнее</a>
-            </div>
-
-            <div class="advantages-item">
-              <img class="advantages__icon" src="./src/images/advantages/ico-support.svg" alt="Support Icon">
-              <p class="advantages__title">Поддержка</p>
-              <p class="advantages__paragraph">Мы постоянно обновляем трнажеры и следим за их актуальностью, а наша
-                поддержка готова вам помочь 24/7</p>
-              <a href="#" class="advantages__button">Подробнее</a>
-            </div>
-
-          </div>
-
-          <div class="black-section">
-
-            <h3 class="black-section__title">Изучайте новое как на ПК, так и на вашем телефоне</h3>
-            <p class="black-section__paragraph">Вы можете прокачать свои знания программирования не только сидя за
-              компьютером, но и в любом другом месте с помощью вашего телефона</p>
-            <img class="black-section__image" src="./src/images/black-section/black-section-image.svg"
-              alt="Black Section Image">
-
-          </div>
-
-          <div class="info-blocks">
-
-            <div class="info-blocks__item info-blocks-1">
-              <h5 class="info__title">Постоянное обновление тренажёров</h5>
-              <p class="info__paragraph">Мы добавляем новые тренажёры сразу же, как они выходят, а так же следим за
-                актуальностью старых</p>
-              <img src="./src/images/info-blocks/left-block.svg" alt="" class="info__image">
-            </div>
-
-            <div class="info-blocks__item info-blocks-2">
-              <h5 class="info__title">Поддержка более 11 языков</h5>
-              <p class="info__paragraph">У нас вы можете улучшить знания популярных языков программирования, таких как:
-                JavaScript, Python, PHP, Java, C#, C++ и других</p>
-              <img src="./src/images/info-blocks/right-block.svg" alt="" class="info__image">
-            </div>
-
-          </div>
-
-          <div class="get-knowledge">
-            <div class="get-knowledge-circles">
-              <div class="knowledge-circle-a"></div>
-              <div class="knowledge-circle-b"></div>
-              <div class="knowledge-circle-c"></div>
-            </div>
-
-            <div class="get-knowledge-content">
-              <h6 class="knowledge__title">Эффективная система получения информации</h6>
-              <p class="knowledge__paragraph">Всё что вам нужно, для удобного и быстрого получения новых знаний или
-                отработки уже имеющихся навыков, это лишь:</p>
-
-              <div class="knowledge-list">
-                <div class="knowledge-list__item">
-                  <img class="knowledge-list__image" src="./src/images/get-knowledge/Tick-icon.svg"
-                    alt="Knowledge list icon">
-                  <p class="knowledge-list__text">Перейти на страницу с тренажёрами</p>
-                </div>
-
-                <div class="knowledge-list__item">
-                  <img class="knowledge-list__image" src="./src/images/get-knowledge/Tick-icon.svg"
-                    alt="Knowledge list icon">
-                  <p class="knowledge-list__text">Выбрать нужный язык программирования</p>
-                </div>
-
-                <div class="knowledge-list__item">
-                  <img class="knowledge-list__image" src="./src/images/get-knowledge/Tick-icon.svg"
-                    alt="Knowledge list icon">
-                  <p class="knowledge-list__text">Получить доступ к десяткам тренажёрам и прокачать себя в сфере IT</p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </main>
       </div>
 
       <div class="reviews">
         <h6 class="reviews__title">Сотни отзывов о нас: от посетителей до постоянных пользователей</h6>
-        <div class="reviews-wrapper">
-          <div class="reviews-content">
+        <div class="reviews-card__block">
 
-            <div class="reviews-card__block">
-
-              <div class="reviews-card">
-                <p class="reviews-card__text">“Отзыв 1”</p>
-                <div class="reviews-card__user">
-                  <img class="reviews-card__user-image" src="./src/images/reviews/user-unselect-icon.svg"
-                    alt="User Image">
-                  <div class="reviews-card__user-info">
-                    <p class="reviews-card__user-name">Каролина Ю.</p>
-                    <p class="reviews-card__user-post">?</p>
-                  </div>
-                </div>
+          <div class="reviews-card">
+            <p class="reviews-card__text">“Отзыв 1”</p>
+            <div class="reviews-card__user">
+              <img class="reviews-card__user-image" src="./src/images/reviews/user-unselect-icon.svg" alt="User Image">
+              <div class="reviews-card__user-info">
+                <p class="reviews-card__user-name">Каролина Ю.</p>
+                <p class="reviews-card__user-post">Моё вдохновение</p>
               </div>
-
-              <div class="reviews-card">
-                <p class="reviews-card__text">“Отзыв 2”</p>
-                <div class="reviews-card__user">
-                  <img class="reviews-card__user-image" src="./src/images/reviews/user-unselect-icon.svg"
-                    alt="User Image">
-                  <div class="reviews-card__user-info">
-                    <p class="reviews-card__user-name">Елена Ш.</p>
-                    <p class="reviews-card__user-post">JavaScript Senior Dev.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="reviews-card">
-                <p class="reviews-card__text">“Отзыв 3”</p>
-                <div class="reviews-card__user">
-                  <img class="reviews-card__user-image" src="./src/images/reviews/user-unselect-icon.svg"
-                    alt="User Image">
-                  <div class="reviews-card__user-info">
-                    <p class="reviews-card__user-name">Джо.</p>
-                    <p class="reviews-card__user-post">СЕО “LIt & Uh”</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="reviews-card">
-                <p class="reviews-card__text">“Отзыв 4”</p>
-                <div class="reviews-card__user">
-                  <img class="reviews-card__user-image" src="./src/images/reviews/user-unselect-icon.svg"
-                    alt="User Image">
-                  <div class="reviews-card__user-info">
-                    <p class="reviews-card__user-name">Матвей Ш.</p>
-                    <p class="reviews-card__user-post">FullStack Senior Dev.</p>
-                  </div>
-                </div>
-              </div>
-
-
             </div>
-
-            <div class="reviews-card__block second-reviews-block">
-
-              <div class="reviews-card">
-                <p class="reviews-card__text">“Отзыв 1”</p>
-                <div class="reviews-card__user">
-                  <img class="reviews-card__user-image" src="./src/images/reviews/user-unselect-icon.svg"
-                    alt="User Image">
-                  <div class="reviews-card__user-info">
-                    <p class="reviews-card__user-name">Каролина Ю.</p>
-                    <p class="reviews-card__user-post">Моё вдохновение</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="reviews-card">
-                <p class="reviews-card__text">“Отзыв 2”</p>
-                <div class="reviews-card__user">
-                  <img class="reviews-card__user-image" src="./src/images/reviews/user-unselect-icon.svg"
-                    alt="User Image">
-                  <div class="reviews-card__user-info">
-                    <p class="reviews-card__user-name">Елена Ш.</p>
-                    <p class="reviews-card__user-post">JavaScript Senior Dev.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="reviews-card">
-                <p class="reviews-card__text">“Отзыв 3”</p>
-                <div class="reviews-card__user">
-                  <img class="reviews-card__user-image" src="./src/images/reviews/user-unselect-icon.svg"
-                    alt="User Image">
-                  <div class="reviews-card__user-info">
-                    <p class="reviews-card__user-name">Джо.</p>
-                    <p class="reviews-card__user-post">СЕО “LIt & Uh”</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="reviews-card">
-                <p class="reviews-card__text">“Отзыв 4”</p>
-                <div class="reviews-card__user">
-                  <img class="reviews-card__user-image" src="./src/images/reviews/user-unselect-icon.svg"
-                    alt="User Image">
-                  <div class="reviews-card__user-info">
-                    <p class="reviews-card__user-name">Матвей Ш.</p>
-                    <p class="reviews-card__user-post">FullStack Senior Dev.</p>
-                  </div>
-                </div>
-              </div>
-
-
-            </div>
-
           </div>
+
+          <div class="reviews-card">
+            <p class="reviews-card__text">“Отзыв 2”</p>
+            <div class="reviews-card__user">
+              <img class="reviews-card__user-image" src="./src/images/reviews/user-unselect-icon.svg" alt="User Image">
+              <div class="reviews-card__user-info">
+                <p class="reviews-card__user-name">Елена Ш.</p>
+                <p class="reviews-card__user-post">JavaScript Senior Dev.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="reviews-card">
+            <p class="reviews-card__text">“Отзыв 3”</p>
+            <div class="reviews-card__user">
+              <img class="reviews-card__user-image" src="./src/images/reviews/user-unselect-icon.svg" alt="User Image">
+              <div class="reviews-card__user-info">
+                <p class="reviews-card__user-name">Джо.</p>
+                <p class="reviews-card__user-post">СЕО “LIt & Uh”</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="reviews-card">
+            <p class="reviews-card__text">“Отзыв 4”</p>
+            <div class="reviews-card__user">
+              <img class="reviews-card__user-image" src="./src/images/reviews/user-unselect-icon.svg" alt="User Image">
+              <div class="reviews-card__user-info">
+                <p class="reviews-card__user-name">Матвей Ш.</p>
+                <p class="reviews-card__user-post">FullStack Senior Dev.</p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 
+    </main>
+  </div>
 
-      <div class="container">
-        <footer>
+  <div class="container">
+    <footer>
 
-          <div class="footer-main-section">
-            <img src="./src/images/logo/logo-text.svg" alt="" class="footer__logo">
-            <p class="footer__slogan">“Мы создаем продукт, который облегчит жизнь программистам”</p>
-          </div>
-
-          <div class="footer-quick-access">
-            <ul class="footer__list">
-              <li>
-                <h6 class="footer__list-title">Быстрый доступ</h6>
-              </li>
-              <li><a class="footer__list-item" href="#">Тренажёры</a></li>
-              <li><a class="footer__list-item" href="#">О нас</a></li>
-              <li><a class="footer__list-item" href="#">Блог</a></li>
-              <li><a class="footer__list-item" href="#">Личный кабинет</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-socials">
-            <ul class="footer__list">
-              <li>
-                <h6 class="footer__list-title">Социальные сети</h6>
-              </li>
-              <li><a class="footer__list-item" href="#">LinkedIn</a></li>
-              <li><a class="footer__list-item" href="#">Instagram</a></li>
-              <li><a class="footer__list-item" href="#">GitHub</a></li>
-              <li><a class="footer__list-item" href="#">Telegram</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-support">
-            <h6 class="footer__list-title">Связаться с нами</h6>
-            <a class="footer__list-item" href="#">example@gmail.com</a>
-          </div>
-
-        </footer>
+      <div class="footer-main-section">
+        <img src="./src/images/logo/logo-text.svg" alt="" class="footer__logo">
+        <p class="footer__slogan">“Мы создаем продукт, который облегчит жизнь программистам”</p>
       </div>
 
-    </div>
-  </div>
+      <div class="footer-quick-access">
+        <ul class="footer__list">
+          <li>
+            <h6 class="footer__list-title">Быстрый доступ</h6>
+          </li>
+          <li><a class="footer__list-item" href="#">Тренажёры</a></li>
+          <li><a class="footer__list-item" href="#">О нас</a></li>
+          <!-- <li><a class="footer__list-item" href="#">Блог</a></li> -->
+          <li><a class="footer__list-item" href="#">Личный кабинет</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-socials">
+        <ul class="footer__list">
+          <li>
+            <h6 class="footer__list-title">Социальные сети</h6>
+          </li>
+          <li><a class="footer__list-item" href="#">LinkedIn</a></li>
+          <li><a class="footer__list-item" href="#">Instagram</a></li>
+          <li><a class="footer__list-item" href="#">GitHub</a></li>
+          <li><a class="footer__list-item" href="#">Telegram</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-support">
+        <h6 class="footer__list-title">Связаться с нами</h6>
+        <a class="footer__list-item" href="#">example@gmail.com</a>
+      </div>
+
+    </footer>
   </div>
 
 </body>
