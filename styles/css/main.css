@@ -21,7 +21,29 @@
 .hero-section,
 .hero-circle-a,
 .hero-circle-b,
-.hero-circle-c {
+.hero-circle-c,
+.catalog-hero-content,
+.gsap-sec-1,
+.gsap-sec-2,
+.gsap-sec-3,
+.catalog-lang,
+.about-hero__title,
+.about-hero__paragraph,
+.about-hero__image,
+.about-advantages__card,
+.about-info__content,
+.about-start,
+.about-start__image,
+.navigation__logo,
+.navigation__list-item,
+.advantages-item,
+.black-section__image,
+.info__image,
+.knowledge-circle-a,
+.knowledge-circle-b,
+.knowledge-circle-c,
+.reviews__title,
+.reviews-card__block {
   will-change: transform;
 }
 
@@ -91,6 +113,83 @@ body .hero__circles .hero-circle-c {
   background-color: rgba(251, 250, 250, 0.05);
   -webkit-backdrop-filter: blur(50px);
   backdrop-filter: blur(50px);
+}
+body .loader-mask {
+  width: 100%;
+  height: 100%;
+  background: var(--color-body-bg);
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+body .loader-mask .loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  color: #00c9d0;
+  display: inline-block;
+  margin: -25px 0 0 -25px;
+  text-indent: -9999em;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+body .loader-mask .loader div {
+  background-color: #6aa9d9;
+  display: inline-block;
+  float: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  opacity: 0.5;
+  border-radius: 50%;
+  -webkit-animation: ballPulseDouble 2s ease-in-out infinite;
+  animation: ballPulseDouble 2s ease-in-out infinite;
+}
+body .loader-mask .loader div:last-child {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+@-webkit-keyframes ballPulseDouble {
+  0%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes ballPulseDouble {
+  0%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+body .hide {
+  opacity: 0;
 }
 
 header {
@@ -175,6 +274,7 @@ header .navigation .navigation__list .navigation__mobile-menu {
 main .hero-section {
   margin-top: calc(var(--index) * 7);
   position: relative;
+  opacity: 0;
 }
 main .hero-section .hero__title {
   color: var(--title-color);
@@ -876,6 +976,7 @@ footer .footer-support .footer__list-item {
   z-index: 1;
 }
 .catalog-body .main-catalog .catalog-hero-content {
+  opacity: 0;
   max-width: calc(var(--index) * 70);
   position: absolute;
   top: calc(var(--index) * 8);
@@ -931,6 +1032,7 @@ footer .footer-support .footer__list-item {
   }
 }
 .catalog-body .main-catalog .catalog-hero-circles .catalog-circle-a {
+  opacity: 0;
   position: absolute;
   top: calc(var(--index) * 9);
   right: calc(var(--index) * 11);
@@ -943,6 +1045,7 @@ footer .footer-support .footer__list-item {
 }
 .catalog-body .main-catalog .catalog-hero-circles .catalog-circle-b {
   text-align: center;
+  opacity: 0;
   position: absolute;
   top: calc(var(--index) * 11);
   right: calc(var(--index) * 7);
@@ -954,6 +1057,7 @@ footer .footer-support .footer__list-item {
   z-index: -2;
 }
 .catalog-body .main-catalog .catalog-hero-circles .catalog-circle-c {
+  opacity: 0;
   position: absolute;
   top: calc(var(--index) * 4);
   right: calc(var(--index) * 2);
@@ -969,6 +1073,7 @@ footer .footer-support .footer__list-item {
   backdrop-filter: blur(50px);
 }
 .catalog-body .main-catalog .catalog-hero-circles .catalog-circle-d {
+  opacity: 0;
   position: absolute;
   top: calc(var(--index) * 9);
   left: calc(var(--index) * 11);
@@ -981,6 +1086,7 @@ footer .footer-support .footer__list-item {
 }
 .catalog-body .main-catalog .catalog-hero-circles .catalog-circle-e {
   text-align: center;
+  opacity: 0;
   position: absolute;
   top: calc(var(--index) * 11);
   left: calc(var(--index) * 7);
@@ -992,6 +1098,7 @@ footer .footer-support .footer__list-item {
   z-index: -2;
 }
 .catalog-body .main-catalog .catalog-hero-circles .catalog-circle-f {
+  opacity: 0;
   position: absolute;
   top: calc(var(--index) * 4);
   left: calc(var(--index) * 2);
@@ -1543,6 +1650,7 @@ footer .footer-support .footer__list-item {
   margin-top: calc(var(--index) * 6);
 }
 .main-about .about-hero-section .about-hero__title {
+  opacity: 0;
   margin-bottom: 28px;
   color: var(--title-color);
   font-size: calc(var(--index) * 2.5);
@@ -1550,10 +1658,12 @@ footer .footer-support .footer__list-item {
   font-weight: 700;
 }
 .main-about .about-hero-section .about-hero__paragraph {
+  opacity: 0;
   color: var(--paragraph-color);
   font-size: calc(var(--index) * 0.7);
 }
 .main-about .about-hero-section .about-hero__image {
+  opacity: 0;
   width: 100%;
   margin-bottom: 24px;
   border-style: solid;
