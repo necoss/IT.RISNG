@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ## [Release]
 
+## [1.2] - 2023-08-17
+### Removed: 
+- Pre-loader from all pages, except Main page.
+
+
 ## [1.1] - 2023-08-17
 ### Added: 
 - Pre-loader for all pages.
