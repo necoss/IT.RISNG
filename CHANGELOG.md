@@ -3,7 +3,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
-## [Unreleased]
+## [Release]
+
+## [Release-1.0] - 2023-08-16
+### Added: 
+- Added About Us page.
+- Added gsap animations.
+
 
 ## [Beta-ver.1.0] - 2023-08-16
 ### Fixed: 

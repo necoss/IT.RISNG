@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>О нас - IT.RISING</title>
+
+  <link rel="shortcut icon" href="../../src/images/logo/logo.svg" type="image/x-icon">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="../../styles/css/main.css">
+
+  <script src="../../libs/gsap/gsap.min.js" defer></script>
+  <script src="../../libs/gsap/ScrollTrigger.min.js" defer></script>
+  <script src="../../libs/gsap/ScrollSmoother.min.js" defer></script>
+  <script src="../../libs/gsap/ScrollToPlugin.min.js" defer></script>
+  <script src="../../libs/gsap/TextPlugin.min.js" defer></script>
+
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js" defer></script>
+
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
+
+  <script src="../../js/smooth-scroll/lenis-scroll.js" defer></script>
+  <script src="../../js/menu-button.js" defer></script>
+
+  <script src="../../js/animations/header-animation.js" defer></script>
+  <script src="../../js/animations/footer-animation.js" defer></script>
+  <script src="../../js/animations/about-animation.js" defer></script>
+
+</head>
+
+<body class="body-about">
+
+  <div class="container">
+
+    <header>
+      <nav class="navigation">
+        <a href="../../index.html" class="navigation__logo">
+          <img class="logo-image" src="../../src/images/logo/logo.svg" alt="Logo">
+          <p class="logo-text">itr.</p>
+        </a>
+
+        <ul class="navigation__list">
+          <li class="navigation__list-item"><a href="../../index.html">Главная</a></li>
+          <li class="navigation__list-item"><a href="./catalog.html">Тренажёры</a></li>
+          <li class="navigation__list-item"><a href="./about.html">О нас</a></li>
+          <!-- <li class="navigation__list-item"><a href="#">Блог</a></li> -->
+          <li class="navigation__list-item navigation__primary-btn"><a href="./login.html">Войти</a></li>
+          <li class="navigation__list-item navigation__mobile-menu">
+            <button onclick="showDropdown()" class="navigation__mobile-menu__button">
+              <iconify-icon icon="iconamoon:menu-burger-horizontal"></iconify-icon>
+            </button>
+
+            <div id="dropdown">
+              <a href="../../index.html">Главная</a>
+              <a href="./catalog.html">Тренажёры</a>
+              <a href="./about.html">О нас</a>
+              <!-- <a href="#">Блог</a> -->
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main-about">
+      <div class="about-hero-section">
+        <h1 class="about-hero__title">Мы воплощаем идеи в реальность</h1>
+        <p class="about-hero__paragraph">"Возвысься с помощью кода: Раскрой свой потенциал с помощью IT.RISING"</p>
+        <img class="about-hero__image" src="../../src/images/about/about-bg.png" alt="About Background">
+      </div>
+
+      <div class="about-advantages">
+        <div class="about-advantages__card">
+          <h2 class="about-advantages__heading-stats about-advantages__heading-stats__blue">Доступные языки</h2>
+          <h3 class="about-advantages__number-stats about-advantages__heading-stats__blue">6+</h3>
+          <p class="about-advantages__description">Мы предоставляем полный доступ более чем к 6 языкам программирования:
+            JavaScript, Python, C++, Java, Php, C# другие. И это только начало!</p>
+        </div>
+
+        <div class="about-advantages__card">
+          <h2 class="about-advantages__heading-stats about-advantages__heading-stats__purple">Количество тренажёров</h2>
+          <h3 class="about-advantages__number-stats about-advantages__heading-stats__purple">17+</h3>
+          <p class="about-advantages__description">На нашем сайте ижу находятся больше 17 тренажёров, но благодаря нашим
+            специалистам этот список постоянно пополняется!</p>
+        </div>
+
+        <div class="about-advantages__card">
+          <h2 class="about-advantages__heading-stats about-advantages__heading-stats__pink">А самое главное</h2>
+          <h3 class="about-advantages__number-stats about-advantages__heading-stats__pink">0$/mo</h3>
+          <p class="about-advantages__description">Чтобы пользоваться нашим проектом и иметь доступ ко всем тренажёрам,
+            которые мы собрали, вам совершенно не нужно платить! Мы стараемся только для вас!</p>
+        </div>
+      </div>
+
+      <div class="about-info">
+        <div class="about-info__content">
+          <p class="about-info__text"></p>
+          <h4 class="about-info__title">О IT.RISING</h4>
+
+          <p class="about-info__text">IT.RISING - инновационная компания, занимающаяся сбором и предоставлением лучших
+            тренажеров по программированию со всего интернета. Наша миссия - обеспечить программистов и разработчиков
+            инструментами, которые позволят им эффективно учиться и совершенствоваться в мире кодирования. Мы верим, что
+            качественное обучение и практика - ключевые компоненты успеха в современной индустрии информационных
+            технологий.</p>
+
+          <h5 class="about-info__subtitle">Что мы делаем</h5>
+
+          <p class="about-info__text">Мы ищем и отбираем только самые высококачественные тренажеры и обучающие
+            платформы, которые помогут нашим пользователям освоить новые языки программирования и улучшить уже имеющиеся
+            навыки. Наша команда экспертов тщательно анализирует каждый тренажер, проверяет его на актуальность,
+            практичность и эффективность. Мы стремимся предоставить разнообразный выбор инструментов, чтобы каждый
+            разработчик мог найти наиболее подходящий путь обучения.</p>
+
+          <h5 class="about-info__subtitle">Наши преимущества:</h5>
+
+          <ul class="about-info__list">
+            <li class="about-info-list__item"><span>Многообразие контента: </span>Мы предоставляем тренажеры для
+              широкого спектра языков программирования, от базовых до передовых, чтобы каждый мог найти интересующий его
+              язык.</li>
+            <li class="about-info-list__item"><span>Актуальность: </span>Мир программирования постоянно меняется, и мы
+              следим за последними тенденциями. Наш контент всегда актуален и отражает текущие стандарты и подходы.</li>
+            <li class="about-info-list__item"><span>Доступность: </span>Платформа IT.RISING доступна в любое время и из любой
+              точки мира, что позволяет нашим пользователям учиться на своем графике.</li>
+          </ul>
+
+          <h5 class="about-info__subtitle">Наша цель</h5>
+
+          <p class="about-info__text">Мы стремимся создать сильное сообщество разработчиков, которые могут доверять нам
+            свой процесс обучения. IT.RISING призвана помочь каждому программисту раскрыть свой потенциал, поднять свои
+            навыки на новый уровень и успешно справляться с вызовами современной IT-индустрии. Вместе с IT.RISING вы
+            сможете не только освоить новые языки программирования, но и по-новому взглянуть на свою карьеру в сфере
+            разработки.</p>
+        </div>
+      </div>
+
+      <div class="about-start">
+        <img class="about-start__image" src="../../src/images/about/about-start-img.png" alt="About Start Img">
+
+        <div class="about-start__content">
+          <h6 class="about-start__title">Оттачивайте навыки вместе с IT.RISING</h6>
+          <p class="about-start__paragraph">С IT.RISING вы можете изучать новые технологии, оттачивать навыки на практике и подготовиться к вызовам современной индустрии. Наша цель - предоставить вам самые качественные инструменты, чтобы вы могли достичь успеха в мире программирования. Вместе с IT.RISING вы будете расти, развиваться и подниматься на новые высоты в своей карьере разработчика.</p>
+          <a href="./catalog.html" class="about-start__button">Прокачаться</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+
+      <div class="footer-main-section">
+        <img src="../../src/images/logo/logo-text.svg" alt="" class="footer__logo">
+        <p class="footer__slogan">“Мы создаем продукт, который облегчит жизнь программистам”</p>
+      </div>
+
+      <div class="footer-quick-access">
+        <ul class="footer__list">
+          <li>
+            <h6 class="footer__list-title">Быстрый доступ</h6>
+          </li>
+          <li><a class="footer__list-item" href="./catalog.html">Тренажёры</a></li>
+          <li><a class="footer__list-item" href="./about.html">О нас</a></li>
+          <!-- <li><a class="footer__list-item" href="#">Блог</a></li> -->
+          <li><a class="footer__list-item" href="../../pages/ru/login.html">Личный кабинет</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-socials">
+        <ul class="footer__list">
+          <li>
+            <h6 class="footer__list-title">Социальные сети</h6>
+          </li>
+          <li><a class="footer__list-item" href="#">LinkedIn</a></li>
+          <li><a class="footer__list-item" href="#">Instagram</a></li>
+          <li><a class="footer__list-item" href="#">GitHub</a></li>
+          <li><a class="footer__list-item" href="#">Telegram</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-support">
+        <h6 class="footer__list-title">Связаться с нами</h6>
+        <a class="footer__list-item" href="#">example@gmail.com</a>
+      </div>
+
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
