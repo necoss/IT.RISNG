@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Тренажёры - IT.RISING</title>
+
+  <link rel="shortcut icon" href="../../src/images/logo/logo.svg" type="image/x-icon">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="../../styles/css/main.css">
+
+  <script src="../../libs/gsap/gsap.min.js" defer></script>
+  <script src="../../libs/gsap/ScrollTrigger.min.js" defer></script>
+  <script src="../../libs/gsap/ScrollSmoother.min.js" defer></script>
+  <script src="../../libs/gsap/ScrollToPlugin.min.js" defer></script>
+  <script src="../../libs/gsap/TextPlugin.min.js" defer></script>
+
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js" defer></script>
+
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
+
+  <script src="../../libs/gsap/gsap.min.js" defer></script>
+  <script src="../../libs/gsap/ScrollTrigger.min.js" defer></script>
+  <script src="../../libs/gsap/ScrollSmoother.min.js" defer></script>
+  <script src="../../libs/gsap/ScrollToPlugin.min.js" defer></script>
+  <script src="../../libs/gsap/TextPlugin.min.js" defer></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"
+    integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer>
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+    integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" defer>
+  </script>
+
+  <script src="../../js/catalog-page/swiper-settings.js" defer></script>
+  <script src="../../js/smooth-scroll/lenis-scroll.js" defer></script>
+  <script src="../../js/menu-button.js" defer></script>
+  <script src="../../js/catalog-page/filter-mixitup.js" defer></script>
+
+  <!-- <script src="./js/gsap-animation.js" defer></script> -->
+  <script src="../../js/animations/header-animation.js" defer></script>
+  <script src="../../js/animations/catalog-circles-animation.js" defer></script>
+
+</head>
+
+<body class="catalog-body">
+
+  <div class="container">
+
+    <header>
+      <nav class="navigation">
+        <a href="../../index.html" class="navigation__logo">
+          <img class="logo-image" src="../../src/images/logo/logo.svg" alt="Logo">
+          <p class="logo-text">itr.</p>
+        </a>
+
+        <ul class="navigation__list">
+          <li class="navigation__list-item"><a href="../../index.html">Главная</a></li>
+          <li class="navigation__list-item"><a href="./catalog.html">Тренажёры</a></li>
+          <li class="navigation__list-item"><a href="#">О нас</a></li>
+          <!-- <li class="navigation__list-item"><a href="#">Блог</a></li> -->
+          <li class="navigation__list-item navigation__primary-btn"><a href="./login.html">Войти</a></li>
+          <li class="navigation__list-item navigation__mobile-menu">
+            <button onclick="showDropdown()" class="navigation__mobile-menu__button">
+              <iconify-icon icon="iconamoon:menu-burger-horizontal"></iconify-icon>
+            </button>
+
+            <div id="dropdown">
+              <a href="../../index.html">Главная</a>
+              <a href="./catalog.html">Тренажёры</a>
+              <a href="#">О нас</a>
+              <!-- <a href="#">Блог</a> -->
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+  </div>
+
+  <section class="main-catalog">
+
+    <div class="container">
+
+      <div class="catalog-hero-content">
+        <h2 class="catalog-hero__title">Улучшите ваши знания языков программирования с IT.RISING</h2>
+        <p class="catalog-hero__paragraph">Тренажёры на нашем сайте оснащены интуитивным пользовательским интерфейсом,
+          адаптивной системой поддержки и обратной связи, что способствует более быстрому и эффективному обучению.</p>
+        <iconify-icon icon="formkit:arrowdown"></iconify-icon>
+      </div>
+
+      <div class="catalog-hero-circles">
+        <div class="catalog-circle-a gsap-sec-1"></div>
+        <div class="catalog-circle-b gsap-sec-2"></div>
+        <div class="catalog-circle-c gsap-sec-3"></div>
+        <div class="catalog-circle-d gsap-sec-1"></div>
+        <div class="catalog-circle-e gsap-sec-2"></div>
+        <div class="catalog-circle-f gsap-sec-3"></div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <main class="catalog--main">
+    <section class="catalog-lang">
+
+      <h2 class="catalog-lang__title">Быстрый выбор языка</h2>
+
+      <div class="catalog-lang-swiper swiper">
+
+        <div class="swiper-wrapper">
+
+          <button href="#" class="swiper-slide catalog-lang__slide catalog-lang__slide-js control" data-filter=".mix-js">JavaScript</button>
+          <button href="#" class="swiper-slide catalog-lang__slide catalog-lang__slide-py control" data-filter=".mix-py">Python</button>
+          <button href="#" class="swiper-slide catalog-lang__slide catalog-lang__slide-java control" data-filter=".mix-java">Java</button>
+          <button href="#" class="swiper-slide catalog-lang__slide catalog-lang__slide-css control" data-filter=".mix-htmlcss">HTML & CSS</button>
+          <button href="#" class="swiper-slide catalog-lang__slide catalog-lang__slide-c control" data-filter=".mix-c">C#</button>
+          <button href="#" class="swiper-slide catalog-lang__slide catalog-lang__slide-php control" data-filter=".mix-php">Php</button>
+          <button href="#" class="swiper-slide catalog-lang__slide catalog-lang__slide-cc control" data-filter=".mix-cc">C++</button>
+
+          <button href="#" class="swiper-slide catalog-lang__slide catalog-lang__slide-js control" data-filter=".mix-js">JavaScript</button>
+          <button href="#" class="swiper-slide catalog-lang__slide catalog-lang__slide-py control" data-filter=".mix-py">Python</button>
+          <button href="#" class="swiper-slide catalog-lang__slide catalog-lang__slide-java control" data-filter=".mix-java">Java</button>
+          <button href="#" class="swiper-slide catalog-lang__slide catalog-lang__slide-css control" data-filter=".mix-htmlcss">HTML & CSS</button>
+          <button href="#" class="swiper-slide catalog-lang__slide catalog-lang__slide-c control" data-filter=".mix-c">C#</button>
+          <button href="#" class="swiper-slide catalog-lang__slide catalog-lang__slide-php control" data-filter=".mix-php">Php</button>
+          <button href="#" class="swiper-slide catalog-lang__slide catalog-lang__slide-cc control" data-filter=".mix-cc">C++</button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <div class="catalog-trainings">
+      <div class="container">
+
+        <h4 class="trainings__title">Лучшие тренажёры</h4>
+        <p class="trainings__quote">Тот, кто упорствует в своем безумии, в один прекрасный день окажется мудрецом</p>
+
+        <div class="trainings-content">
+          <input class="trainings-content__search" type="text" placeholder="Поиск">
+
+          <div class="trainings-content__other">
+            <button class="trainings-content__filters" onclick="openFilter()">Фильтры</button>
+            <div class="filter-items">
+              <p class="filter-items__title"></p>
+              <button type="button" class="control filter-items__button" data-filter="all">Все языки</button>
+              <button type="button" class="control filter-items__button" data-filter=".mix-js">JavaScript</button>
+              <button type="button" class="control filter-items__button" data-filter=".mix-py">Python</button>
+              <button type="button" class="control filter-items__button" data-filter=".mix-htmlcss">HTML & CSS</button>
+              <button type="button" class="control filter-items__button" data-filter=".mix-php">Php</button>
+              <button type="button" class="control filter-items__button" data-filter=".mix-c">C#</button>
+              <button type="button" class="control filter-items__button" data-filter=".mix-cc">C++</button>
+              <button type="button" class="control filter-items__button" data-filter=".mix-java">Java</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="trainings-block">
+
+          <a href="http://flukeout.github.io"
+            class="trainings-block__item trainings-block__item__css-diner mix mix-htmlcss" target="_blank">
+
+            <div class="trainings-item-content">
+              <div class="trainings-item__tags">
+                <p class="trainings-item__tag trainings-item__tags-css">CSS</p>
+              </div>
+              <h5 class="trainings-item__title">CSS Diner</h5>
+              <p class="trainings-item__paragraph">CSS Diner — отличнейшая и нагляднейшая игра, обучающая работе с
+                CSS-селекторами. Ваша задача — с помощью подходящих селекторов выбрать либо тарелки, либо лежащие на них
+                фрукты. В игре 26 уровней, в которых селекторы постепенно усложняются.</p>
+            </div>
+          </a>
+
+          <a href="https://www.codewars.com/"
+            class="trainings-block__item trainings-block__item__codewars mix mix-js mix-php" target="_blank">
+
+            <div class="trainings-item-content">
+              <div class="trainings-item__tags">
+                <p class="trainings-item__tag trainings-item__tags-js">JS</p>
+                <p class="trainings-item__tag trainings-item__tags-php">Php</p>
+              </div>
+              <h5 class="trainings-item__title">CodeWars</h5>
+              <p class="trainings-item__paragraph">CodeWars — сайт с задачками по программированию, который предназначен
+                для обучения за счёт геймификации процесса. Одни пользователи создают задачи, призванные объяснить
+                некоторые аспекты программирования, другие их решают, и за всё это начисляется рейтинг.</p>
+            </div>
+          </a>
+
+          <a href="https://flexboxfroggy.com"
+            class="trainings-block__item trainings-block__item__flexbox-froggy mix mix-htmlcss" target="_blank">
+
+            <div class="trainings-item-content">
+              <div class="trainings-item__tags">
+                <p class="trainings-item__tag trainings-item__tags-html">HTML</p>
+                <p class="trainings-item__tag trainings-item__tags-css">CSS</p>
+              </div>
+              <h5 class="trainings-item__title">Flexbox Froggy</h5>
+              <p class="trainings-item__paragraph">CodeWars — сайт с задачками по программированию, который предназначен
+                для обучения за счёт геймификации процесса. Одни пользователи создают задачи, призванные объяснить
+                некоторые аспекты программирования, другие их решают, и за всё это начисляется рейтинг.</p>
+            </div>
+          </a>
+
+          <a href="https://itvdn.com/ru?admitad_uid=efd902d66a193afd5be3ebce0966918a&utm_source=admitad"
+            class="trainings-block__item trainings-block__item__itvdn mix mix-c mix-cc" target="_blank">
+
+            <div class="trainings-item-content">
+              <div class="trainings-item__tags">
+                <p class="trainings-item__tag trainings-item__tags-c">C#</p>
+                <p class="trainings-item__tag trainings-item__tags-cc">C++</p>
+              </div>
+              <h5 class="trainings-item__title">Itvnd</h5>
+              <p class="trainings-item__paragraph">Образовательный online ресурс для IT-специалистов, созданный в 2014
+                году. Цель проекта – обучение языкам программирования и информационным технологиям всех, кто хочет стать
+                профессионалом в сфере разработки программного обеспечения, проектирования сложных программных систем,
+                веб-разработки и в смежных областях.</p>
+            </div>
+          </a>
+
+          <a href="https://stepik.org/catalog" class="trainings-block__item trainings-block__item__stepik mix mix-py mix-js mix-java"
+            target="_blank">
+
+            <div class="trainings-item-content">
+              <div class="trainings-item__tags">
+                <p class="trainings-item__tag trainings-item__tags-py">Python</p>
+                <p class="trainings-item__tag trainings-item__tags-java">Java</p>
+                <p class="trainings-item__tag trainings-item__tags-js">JS</p>
+              </div>
+              <h5 class="trainings-item__title">Stepik</h5>
+              <p class="trainings-item__paragraph">Учитесь на онлайн-курсах, получайте востребованные навыки и знания,
+                сертификаты, общайтесь с миллионами русскоговорящих студентов..</p>
+            </div>
+          </a>
+
+          <a href="https://leetcode.com/" class="trainings-block__item trainings-block__item__leetcode mix mix-java mix-py mix-js mix-php mix-c mix-cc"
+            target="_blank">
+
+            <div class="trainings-item-content">
+              <div class="trainings-item__tags">
+                <p class="trainings-item__tag trainings-item__tags-java">Java</p>
+                <p class="trainings-item__tag trainings-item__tags-py">Python</p>
+                <p class="trainings-item__tag trainings-item__tags-js">JS</p>
+                <p class="trainings-item__tag trainings-item__tags-php">Php</p>
+                <p class="trainings-item__tag trainings-item__tags-c">C#</p>
+              </div>
+              <h5 class="trainings-item__title">LeetCode</h5>
+              <p class="trainings-item__paragraph">LeetCode — это онлайн-платформа с алгоритмическими задачами по
+                программированию, своего рода тренажёр для подготовки к техническим собеседованиям. Считается, что если
+                регулярно с ним заниматься, то через 6–12 месяцев ваши шансы устроиться в какой-нибудь бигтех по типу
+                «Яндекса» заметно вырастут.</p>
+            </div>
+          </a>
+
+          <a href="http://www.flexboxdefense.com/"
+            class="trainings-block__item trainings-block__item__flexbox-defense mix mix-htmlcss" target="_blank">
+
+            <div class="trainings-item-content">
+              <div class="trainings-item__tags">
+                <p class="trainings-item__tag trainings-item__tags-html">HTML</p>
+                <p class="trainings-item__tag trainings-item__tags-css">CSS</p>
+              </div>
+              <h5 class="trainings-item__title">FlexboxDefense</h5>
+              <p class="trainings-item__paragraph">Ваша задача состоит в том, чтобы помешать приближающимся врагам
+                прорвать вашу оборону. В отличие от других игр tower defense, вы должны расположить свои башни с помощью
+                CSS!</p>
+            </div>
+          </a>
+
+          <a href="https://cssgridgarden.com/"
+            class="trainings-block__item trainings-block__item__grid-garden mix mix-htmlcss" target="_blank">
+
+            <div class="trainings-item-content">
+              <div class="trainings-item__tags">
+                <p class="trainings-item__tag trainings-item__tags-html">HTML</p>
+                <p class="trainings-item__tag trainings-item__tags-css">CSS</p>
+              </div>
+              <h5 class="trainings-item__title">Grid Garden</h5>
+              <p class="trainings-item__paragraph">Grid CSS Garden – популярная игра на отработку CSS Grid, но она не
+                раскрывает всех тем, поэтому рекомендуем пройти марафон, чтобы узнать о явных и неявных сетках, а также
+                пользоваться интерактивной шпаргалкой в работе.</p>
+            </div>
+          </a>
+
+          <a href="https://rupl.github.io/unfold/"
+            class="trainings-block__item trainings-block__item__unfold mix mix-htmlcss" target="_blank">
+
+            <div class="trainings-item-content">
+              <div class="trainings-item__tags">
+                <p class="trainings-item__tag trainings-item__tags-html">HTML</p>
+                <p class="trainings-item__tag trainings-item__tags-css">CSS</p>
+              </div>
+              <h5 class="trainings-item__title">Unfold</h5>
+              <p class="trainings-item__paragraph">Grid CSS Garden – популярная игра на отработку CSS Grid, но она не
+                раскрывает всех тем, поэтому рекомендуем пройти марафон, чтобы узнать о явных и неявных сетках, а также
+                пользоваться интерактивной шпаргалкой в работе.</p>
+            </div>
+          </a>
+
+          <a href="http://www.pythonchallenge.com/"
+            class="trainings-block__item trainings-block__item__py-challenge mix mix-py" target="_blank">
+
+            <div class="trainings-item-content">
+              <div class="trainings-item__tags">
+                <p class="trainings-item__tag trainings-item__tags-py">Python</p>
+              </div>
+              <h5 class="trainings-item__title">PyChallenge</h5>
+              <p class="trainings-item__paragraph">У платформы консервативный дизайн и простая организация: заходите, нажимаете на стартовую ссылку и решаете задачи с помощью Python. Уровень сложности выпадающих заданий будет расти: с первыми справятся совсем новички, но дальше будут и задачи со звездочкой. Или с тремя звездочками. И все решаются короткими скриптами — сохраняйте их, могут пригодиться.</p>
+            </div>
+          </a>
+
+          <a href="https://codecombat.com/"
+            class="trainings-block__item trainings-block__item__codecombat mix mix-js mix-py mix-cc" target="_blank">
+
+            <div class="trainings-item-content">
+              <div class="trainings-item__tags">
+                <p class="trainings-item__tag trainings-item__tags-js">JS</p>
+                <p class="trainings-item__tag trainings-item__tags-py">Python</p>
+                <p class="trainings-item__tag trainings-item__tags-cc">C++</p>
+              </div>
+              <h5 class="trainings-item__title">Code Combat</h5>
+              <p class="trainings-item__paragraph">Полезный ресурс для новичков, школьников, учителей: на CodeCombat программировать учат в формате игры. Пользователям предстоит пройти обучающий квест и с нуля освоить Python, JavaScript и C ++, «перепрыгивая» от задачи к задаче. </p>
+            </div>
+          </a>
+
+          <a href="https://checkio.org/"
+            class="trainings-block__item trainings-block__item__checkio mix mix-py" target="_blank">
+
+            <div class="trainings-item-content">
+              <div class="trainings-item__tags">
+                <p class="trainings-item__tag trainings-item__tags-py">Python</p>
+              </div>
+              <h5 class="trainings-item__title">Checkio</h5>
+              <p class="trainings-item__paragraph">В маршруте CheckiO 500 задач, можно выбрать уровень сложности и наблюдать, как решают головоломки другие игроки: иногда код-ревью соседа по игре научит большему, чем собственное прохождение.</p>
+            </div>
+          </a>
+
+          <a href="https://screeps.com/"
+            class="trainings-block__item trainings-block__item__screeps mix mix-js" target="_blank">
+
+            <div class="trainings-item-content">
+              <div class="trainings-item__tags">
+                <p class="trainings-item__tag trainings-item__tags-js">JS</p>
+              </div>
+              <h5 class="trainings-item__title">Screeps</h5>
+              <p class="trainings-item__paragraph">Учиться играючи можно и в Screeps. Это массовая многопользовательская стратегия, в которой нужно захватывать территории, застраивать свою космоколонию, добывать ресурсы и отбиваться от врагов — все с помощью кода на JavaScript. Вариант не для изучения языка с нуля, но поможет отточить скиллы не по учебникам, в «живом» режиме. </p>
+            </div>
+          </a>
+
+          <a href="https://www.codingame.com/start/" class="trainings-block__item trainings-block__item__codingame mix mix-py mix-js mix-php mix-c mix-cc"
+            target="_blank">
+
+            <div class="trainings-item-content">
+              <div class="trainings-item__tags">
+                <p class="trainings-item__tag trainings-item__tags-py">Python</p>
+                <p class="trainings-item__tag trainings-item__tags-js">JS</p>
+                <p class="trainings-item__tag trainings-item__tags-php">Php</p>
+                <p class="trainings-item__tag trainings-item__tags-c">C#</p>
+                <p class="trainings-item__tag trainings-item__tags-cc">C++</p>
+              </div>
+              <h5 class="trainings-item__title">CodinGame</h5>
+              <p class="trainings-item__paragraph">Еще одна игра-тренажер: на выбор 10 языков для прокачки, но действительно сложные головоломки встречаются редко. Зато на платформе устраивают «рыбалку» рекрутеры крупных компаний: можно и до оффера доиграться. </p>
+            </div>
+          </a>
+
+          <a href="https://www.hackerrank.com/" class="trainings-block__item trainings-block__item__hackerrank mix mix-java mix-py mix-php mix-c mix-js mix-cc"
+            target="_blank">
+
+            <div class="trainings-item-content">
+              <div class="trainings-item__tags">
+                <p class="trainings-item__tag trainings-item__tags-java">Java</p>
+                <p class="trainings-item__tag trainings-item__tags-py">Python</p>
+                <p class="trainings-item__tag trainings-item__tags-php">Php</p>
+                <p class="trainings-item__tag trainings-item__tags-c">C#</p>
+                <p class="trainings-item__tag trainings-item__tags-js">JS</p>
+              </div>
+              <h5 class="trainings-item__title">Hackerrank</h5>
+              <p class="trainings-item__paragraph">Прямой конкурент LeetCode — HackerRank тоже используют для хардовой подготовки к техническим интервью. Механика та же: участвуете в конкурсах, решаете задачи на алгоритмизацию и программирование, увеличиваете скорость и качество кода, поражаете рекрутеров.</p>
+            </div>
+          </a>
+
+          <a href="https://www.coderbyte.com/"
+            class="trainings-block__item trainings-block__item__coderbyte mix mix-htmlcss mix-js mix-py mix-c mix-php" target="_blank">
+
+            <div class="trainings-item-content">
+              <div class="trainings-item__tags">
+                <p class="trainings-item__tag trainings-item__tags-js">JS</p>
+                <p class="trainings-item__tag trainings-item__tags-py">Python</p>
+                <p class="trainings-item__tag trainings-item__tags-c">C#</p>
+                <p class="trainings-item__tag trainings-item__tags-css">CSS</p>
+                <p class="trainings-item__tag trainings-item__tags-php">Php</p>
+              </div>
+              <h5 class="trainings-item__title">Coderbyte</h5>
+              <p class="trainings-item__paragraph">Вы можете изучить 12 учебных пособий для изучения вопросов программирования и алгоритмов, которые использовались в предыдущих интервью для будущих работников Google. После изучения теории, переходите на задачи кодирования, которые будут предложены вам в порядке возрастания сложности.</p>
+            </div>
+          </a>
+
+          <a href="https://stamina-online.com/"
+            class="trainings-block__item trainings-block__item__stamina-online mix mix-htmlcss mix-js mix-py mix-c mix-php mix-java mix-cc" target="_blank">
+
+            <div class="trainings-item-content">
+              <div class="trainings-item__tags">
+                <p class="trainings-item__tag trainings-item__tags-c">C#</p>
+                <p class="trainings-item__tag trainings-item__tags-js">JS</p>
+                <p class="trainings-item__tag trainings-item__tags-php">Php</p>
+                <p class="trainings-item__tag trainings-item__tags-py">Python</p>
+                <p class="trainings-item__tag trainings-item__tags-java">Java</p>
+              </div>
+              <h5 class="trainings-item__title">Stamina Online</h5>
+              <p class="trainings-item__paragraph">Тренируйтесь набирать ключевые слова, операторы, операнды, разделители, классы, теги вашего любимого языка программирования! Повысьте свою скорость печати!</p>
+            </div>
+          </a>
+
+          <a href="https://code-basics.com/ru"
+            class="trainings-block__item trainings-block__item__codebasics mix mix-htmlcss mix-js mix-py mix-java mix-c mix-cc mix-php" target="_blank">
+
+            <div class="trainings-item-content">
+              <div class="trainings-item__tags">
+                <p class="trainings-item__tag trainings-item__tags-java">Java</p>
+                <p class="trainings-item__tag trainings-item__tags-php">Php</p>
+                <p class="trainings-item__tag trainings-item__tags-js">JS</p>
+                <p class="trainings-item__tag trainings-item__tags-py">Python</p>
+                <p class="trainings-item__tag trainings-item__tags-cc">C++</p>
+              </div>
+              <h5 class="trainings-item__title">Code Basics</h5>
+              <p class="trainings-item__paragraph">Это полностью бесплатная платформа для изучения основ программирования с нуля. Code Basics был создан разработчиками и сообществом Хекслет для того, чтобы любой желающий мог попробовать себя в программировании и заложить правильный фундамент для новой профессии, основанный не на запоминании специфики, а на понимании системы в целом.</p>
+            </div>
+          </a>
+
+          <div class="gap"></div>
+          <div class="gap"></div>
+          <div class="gap"></div>
+
+        </div>
+
+        <p class="trainings__end">На данный момент это все, но скоро мы добавим новые увлекательные тренажёры!</p>
+
+      </div>
+    </div>
+  </main>
+
+  <div class="container">
+    <footer>
+
+      <div class="footer-main-section">
+        <img src="../../src/images/logo/logo-text.svg" alt="" class="footer__logo">
+        <p class="footer__slogan">“Мы создаем продукт, который облегчит жизнь программистам”</p>
+      </div>
+
+      <div class="footer-quick-access">
+        <ul class="footer__list">
+          <li>
+            <h6 class="footer__list-title">Быстрый доступ</h6>
+          </li>
+          <li><a class="footer__list-item" href="./catalog.html">Тренажёры</a></li>
+          <li><a class="footer__list-item" href="#">О нас</a></li>
+          <!-- <li><a class="footer__list-item" href="#">Блог</a></li> -->
+          <li><a class="footer__list-item" href="../../pages/ru/login.html">Личный кабинет</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-socials">
+        <ul class="footer__list">
+          <li>
+            <h6 class="footer__list-title">Социальные сети</h6>
+          </li>
+          <li><a class="footer__list-item" href="#">LinkedIn</a></li>
+          <li><a class="footer__list-item" href="#">Instagram</a></li>
+          <li><a class="footer__list-item" href="#">GitHub</a></li>
+          <li><a class="footer__list-item" href="#">Telegram</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-support">
+        <h6 class="footer__list-title">Связаться с нами</h6>
+        <a class="footer__list-item" href="#">example@gmail.com</a>
+      </div>
+
+    </footer>
+  </div>
+
+</body>
+
+</html>

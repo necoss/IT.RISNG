@@ -15,6 +15,8 @@
 
   <link rel="stylesheet" href="./styles/css/main.css">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
   <script src="./libs/gsap/gsap.min.js" defer></script>
   <script src="./libs/gsap/ScrollTrigger.min.js" defer></script>
   <script src="./libs/gsap/ScrollSmoother.min.js" defer></script>
@@ -25,8 +27,14 @@
 
   <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js" defer></script>
 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
+
   <script src="./js/gsap-animation.js" defer></script>
+  <script src="./js/animations/header-animation.js" defer></script>
+
+  <script src="./js/smooth-scroll/lenis-scroll.js" defer></script>
   <script src="./js/menu-button.js" defer></script>
+  <script src="./js/main-page/reviews-slider.js" defer></script>
 
 </head>
 
@@ -48,8 +56,8 @@
         </a>
 
         <ul class="navigation__list">
-          <li class="navigation__list-item"><a href="#">Главная</a></li>
-          <li class="navigation__list-item"><a href="#">Тренажёры</a></li>
+          <li class="navigation__list-item"><a href="./index.html">Главная</a></li>
+          <li class="navigation__list-item"><a href="./pages/ru/catalog.html">Тренажёры</a></li>
           <li class="navigation__list-item"><a href="#">О нас</a></li>
           <!-- <li class="navigation__list-item"><a href="#">Блог</a></li> -->
           <li class="navigation__list-item navigation__primary-btn"><a href="./pages/ru/login.html">Войти</a></li>
@@ -59,8 +67,8 @@
             </button>
 
             <div id="dropdown">
-              <a href="#">Главная</a>
-              <a href="#">Тренажёры</a>
+              <a href="./index.html">Главная</a>
+              <a href="./pages/ru/catalog.html">Тренажёры</a>
               <a href="#">О нас</a>
               <!-- <a href="#">Блог</a> -->
             </div>
@@ -77,7 +85,7 @@
         <p class="hero__paragraph">С сервисом IT-RISING вы забудете о вечной проблеме с поисками сайтов для
           отработки ваших навыков программирования или изучения новых</p>
         <div class="hero__buttons">
-          <a href="" class="hero__start-button">Начать</a>
+          <a href="./pages/ru/catalog.html" class="hero__start-button">Начать</a>
           <a href="" class="hero__about-button">О нас <iconify-icon class="about-button-icon" width="20"
               icon="solar:arrow-up-linear" rotate="90deg"></iconify-icon></a>
         </div>
@@ -177,53 +185,61 @@
 
       <div class="reviews">
         <h6 class="reviews__title">Сотни отзывов о нас: от посетителей до постоянных пользователей</h6>
-        <div class="reviews-card__block">
 
-          <div class="reviews-card">
-            <p class="reviews-card__text">“Отзыв 1”</p>
-            <div class="reviews-card__user">
-              <img class="reviews-card__user-image" src="./src/images/reviews/user-unselect-icon.svg" alt="User Image">
-              <div class="reviews-card__user-info">
-                <p class="reviews-card__user-name">Каролина Ю.</p>
-                <p class="reviews-card__user-post">Моё вдохновение</p>
+        <div class="swiper mySwiper reviews-card__block">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide reviews-card">
+              <p class="reviews-card__text">“Хочу выразить огромную благодарность компании IT.RISING за их труд и предоставленные тренажёры. Они действительно делают подготовку в IT сфере более интересной и эффективной. Если вы ищете надёжного партнёра в своём обучении, то IT.RISING – отличный выбор!”</p>
+              <div class="reviews-card__user">
+                <img class="reviews-card__user-image" src="./src/images/reviews/user-unselect-icon.svg" alt="User Image">
+                <div class="reviews-card__user-info">
+                  <p class="reviews-card__user-name">Каролина Ю.</p>
+                  <p class="reviews-card__user-post">Python Middle Dev.</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="reviews-card">
-            <p class="reviews-card__text">“Отзыв 2”</p>
-            <div class="reviews-card__user">
-              <img class="reviews-card__user-image" src="./src/images/reviews/user-unselect-icon.svg" alt="User Image">
-              <div class="reviews-card__user-info">
-                <p class="reviews-card__user-name">Елена Ш.</p>
-                <p class="reviews-card__user-post">JavaScript Senior Dev.</p>
+            <div class="swiper-slide reviews-card">
+              <p class="reviews-card__text">“Я приятно удивлена опытом, который мне предоставила компания IT.RISING. Их сборник тренажёров для IT сферы действительно выделяется на рынке. Комбинация интерактивных сценариев и практических заданий помогла мне значительно улучшить свои навыки в программировании и других областях IT.”</p>
+              <div class="reviews-card__user">
+                <img class="reviews-card__user-image" src="./src/images/reviews/user-unselect-icon.svg" alt="User Image">
+                <div class="reviews-card__user-info">
+                  <p class="reviews-card__user-name">Елена Ш.</p>
+                  <p class="reviews-card__user-post">JavaScript Senior Dev.</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="reviews-card">
-            <p class="reviews-card__text">“Отзыв 3”</p>
-            <div class="reviews-card__user">
-              <img class="reviews-card__user-image" src="./src/images/reviews/user-unselect-icon.svg" alt="User Image">
-              <div class="reviews-card__user-info">
-                <p class="reviews-card__user-name">Джо.</p>
-                <p class="reviews-card__user-post">СЕО “LIt & Uh”</p>
+            <div class="swiper-slide reviews-card">
+              <p class="reviews-card__text">“IT.RISING - настоящий спаситель для тех, кто стремится к успеху в IT сфере. Их тренажёры - истинный инновационный подход к обучению и развитию навыков. Благодаря IT.RISING, я не только повысил свои технические навыки, но и получил уверенность в применении их на практике. Команда профессионалов заслуживает высших похвал за их творческий подход и вклад в образование в IT сфере.”</p>
+              <div class="reviews-card__user">
+                <img class="reviews-card__user-image" src="./src/images/reviews/user-unselect-icon.svg" alt="User Image">
+                <div class="reviews-card__user-info">
+                  <p class="reviews-card__user-name">Джо.</p>
+                  <p class="reviews-card__user-post">СЕО “LIt & Uh”</p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="reviews-card">
-            <p class="reviews-card__text">“Отзыв 4”</p>
-            <div class="reviews-card__user">
-              <img class="reviews-card__user-image" src="./src/images/reviews/user-unselect-icon.svg" alt="User Image">
-              <div class="reviews-card__user-info">
-                <p class="reviews-card__user-name">Матвей Ш.</p>
-                <p class="reviews-card__user-post">FullStack Senior Dev.</p>
+            <div class="swiper-slide reviews-card">
+              <p class="reviews-card__text">“Что меня поразило, так это инновационный подход к обучению. Тренажёры IT.RISING не только предоставляют теоретические знания, но и дают возможность сразу же применять их на практике через разнообразные симуляции и задания. Это действительно помогло углубить моё понимание материала.”</p>
+              <div class="reviews-card__user">
+                <img class="reviews-card__user-image" src="./src/images/reviews/user-unselect-icon.svg" alt="User Image">
+                <div class="reviews-card__user-info">
+                  <p class="reviews-card__user-name">Матвей Ш.</p>
+                  <p class="reviews-card__user-post">FullStack Senior Dev.</p>
+                </div>
               </div>
             </div>
+
           </div>
 
         </div>
+
+        <div class="swiper-button-next reviews-swiper-button"></div>
+        <div class="swiper-button-prev reviews-swiper-button"></div>
+
       </div>
 
     </main>
@@ -242,7 +258,7 @@
           <li>
             <h6 class="footer__list-title">Быстрый доступ</h6>
           </li>
-          <li><a class="footer__list-item" href="#">Тренажёры</a></li>
+          <li><a class="footer__list-item" href="./pages/ru/catalog.html">Тренажёры</a></li>
           <li><a class="footer__list-item" href="#">О нас</a></li>
           <!-- <li><a class="footer__list-item" href="#">Блог</a></li> -->
           <li><a class="footer__list-item" href="./pages/ru/login.html">Личный кабинет</a></li>

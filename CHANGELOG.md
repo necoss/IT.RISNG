@@ -5,6 +5,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ## [Unreleased]
 
+## [Beta-ver.0.9] - 2023-08-16
+### Added: 
+- Reworked a Review section both for desktop and mobile devices.
+- Added Catalog page.
+- Fixed small bugs.
+
+
 ## [Beta-ver.0.8] - 2023-08-12
 ### Fixed:
 - Login page screen sizes for iPhone devices.
