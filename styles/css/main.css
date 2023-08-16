@@ -1701,7 +1701,7 @@ footer .footer-support .footer__list-item {
     margin-top: calc(var(--index) * 10);
     position: relative;
     opacity: 0;
-    z-index: -1 !important;
+    z-index: 5 !important;
   }
   main .hero-section .hero__title {
     margin-right: 0;

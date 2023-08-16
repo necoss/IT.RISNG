@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 
 ## [Unreleased]
 
+## [Beta-ver.1.0] - 2023-08-16
+### Fixed: 
+- Fixed a bug with "Get Started" button.
+
 ## [Beta-ver.0.9] - 2023-08-16
 ### Added: 
 - Reworked a Review section both for desktop and mobile devices.
